@@ -9,6 +9,7 @@ toLists (VVMatrix _ _ vss) = V.toList $ V.map V.toList vss
 
 fromLists :: [[a]] -> VVMatrix a
 fromLists rs | nrs == 0  = VVMatrix 0 0 V.empty
+             | ncs == 0  = VVMatrix 0 0 V.empty
              | otherwise = if any ((/=ncs) . length) $ tail rs
                            then error "rows must have the same length"
                            else VVMatrix nrs ncs $ V.fromList (map V.fromList rs)
