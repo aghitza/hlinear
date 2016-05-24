@@ -1,13 +1,7 @@
 # HLinear
 
 HLinear is a Haskell implementation of the PLE decomposition of matrices over division rings.
-It writes an arbitrary matrix as a product of a permutation matrix, a lower triangular matrix with diagonal entries 1, and an echelon matrix.
-
-Features:
-
-*
-*
-
+It writes an arbitrary matrix as a product of a [permutation matrix](https://en.wikipedia.org/wiki/Permutation_matrix), a [lower unitriangular matrix](https://en.wikipedia.org/wiki/Triangular_matrix#Unitriangular_matrix), and an [echelon matrix](https://en.wikipedia.org/wiki/Row_echelon_form).
 
 ## Installation
 
@@ -66,11 +60,9 @@ For details and code you can immediately start adapting to your needs, see [HLin
 main :: IO ()
 main = do
   let m = M.fromListsUnsafe [[1,2,3],[4,5,6]] :: Matrix FMPQ
-      hk = D.unPLEDecomposition $ FU.pleDecompositionFoldUnfold m
-      e = Hk.echelonForm hk
-      em = EF.toMatrix e
+      (p, l, e) = D.toMatrices $ D.pleDecomposition m
   putStrLn "echelon form:"
-  print em
+  print e
 ```
 
 Output:
