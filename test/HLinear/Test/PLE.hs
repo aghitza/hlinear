@@ -10,7 +10,6 @@ import qualified HLinear.Test.PLE.Hook.EchelonTransformation as EFT
 import qualified HLinear.Test.PLE.Hook.LeftTransformation as LT
 import qualified HLinear.Test.PLE.Sliced.Positions as SP
 import qualified HLinear.Test.PLE.Sliced.Echelonize as SE
-import qualified HLinear.Test.PLE.MultiMod.Echelonize as MME
 
 
 pleTests :: TestTree

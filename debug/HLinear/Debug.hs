@@ -46,10 +46,6 @@ import HLinear.PLE.Hook.RPermute as RP
 import qualified HLinear.PLE.Hook.LeftTransformation as LT
 import HLinear.Matrix as M
 
-import HLinear.Matrix.MultiMod
-import HLinear.MultiMod.Definition as MM
-import HLinear.MultiMod.Reconstruction as MM
-
 import HFlint.NMod
 import HFlint.Primes
 
@@ -92,7 +88,7 @@ main = do
             , fmap unNMod mNMod
             , fmap unNMod $ pm' * lm' * em'
             )
-  
+
   print om
   putStrLn "NNN"
   print rm
