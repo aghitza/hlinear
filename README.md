@@ -8,26 +8,6 @@ It writes an arbitrary matrix as a product of a [permutation matrix](https://en.
 * Install [stack](https://haskellstack.org).
 * Install [git](https://git-scm.com).
 * Install [flint](https://flintlib.org).
-* Create a working directory for HLinear and its dependencies:
-```
-mkdir hlinear-all; cd hlinear-all
-```
-* Get [natural-test](https://github.com/martinra/natural-test):
-```
-git clone https://github.com/martinra/natural-test.git
-```
-* Get [vector-test](https://github.com/martinra/vector-test):
-```
-git clone https://github.com/martinra/vector-test.git
-```
-* Get [algebraic-structures](https://github.com/martinra/algebraic-structures):
-```
-git clone https://github.com/martinra/algebraic-structures.git
-```
-* Get [hflint](https://github.com/martinra/hflint):
-```
-git clone https://github.com/martinra/hflint.git
-```
 * Get HLinear:
 ```
 git clone https://github.com/martinra/hlinear.git
